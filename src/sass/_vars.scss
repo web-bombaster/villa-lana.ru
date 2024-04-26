@@ -13,13 +13,17 @@ $break_xxs: 330px;
 :root {
 
     // Цвета
-    --color-text: #1C2129; // цвет текста
+    --color-text: #fff; // цвет текста
     --color-main: #0265C2; // основной цвет
     --color-accent: #EE354B; // акцентный цвет
     --color-border: #eee; // основной цвет
 
+    --bg-color: #212123; // основной цвет
+
+
     // Шрифты
-    --font-family: 'Inter', sans-serif;
+    --font-family: "Cygre", sans-serif;
+    --font-family-accent: "Vollkorn", serif;
 
     // Скругления
     --brs6: .6rem;

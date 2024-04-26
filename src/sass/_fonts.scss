@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Cygre";
+	font-style: normal;
+	font-weight: 300;
+	/* Браузер сначала попробует найти шрифт локально */
+	src: local("Cygre"),
+		/* Если не получилось, загрузит woff2 */ url("../fonts/CygreLight.woff2")
+			format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+			url("../fonts/CygreLight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Cygre";
+	font-style: normal;
+	font-weight: 400;
+	/* Браузер сначала попробует найти шрифт локально */
+	src: local("Cygre"),
+		/* Если не получилось, загрузит woff2 */ url("../fonts/Cygre.woff2")
+			format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+			url("../fonts/Cygre.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Cygre";
+	font-style: normal;
+	font-weight: 600;
+	/* Браузер сначала попробует найти шрифт локально */
+	src: local("Cygre"),
+		/* Если не получилось, загрузит woff2 */ url("../fonts/CygreSemiBold.woff2")
+			format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+			url("../fonts/CygreSemiBold.woff") format("woff");
+}

@@ -1,11 +1,13 @@
 @charset 'UTF-8';
 :root
 {
-    --color-text: #1c2129;
+    --color-text: #fff;
     --color-main: #0265c2;
     --color-accent: #ee354b;
     --color-border: #eee;
-    --font-family: 'Inter', sans-serif;
+    --bg-color: #212123;
+    --font-family: 'Cygre', sans-serif;
+    --font-family-accent: 'Vollkorn', serif;
     --brs6: .6rem;
     --mainGap: 20px;
     --indentBlocks: 4.8rem;
@@ -548,6 +550,33 @@ template
     display: none;
 }
 
+@font-face
+{
+    font-family: 'Cygre';
+    font-weight: 300;
+    font-style: normal;
+    /* Браузер сначала попробует найти шрифт локально */
+
+    src: local('Cygre'), url('../fonts/CygreLight.woff2') format('woff2'), url('../fonts/CygreLight.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Cygre';
+    font-weight: 400;
+    font-style: normal;
+    /* Браузер сначала попробует найти шрифт локально */
+
+    src: local('Cygre'), url('../fonts/Cygre.woff2') format('woff2'), url('../fonts/Cygre.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Cygre';
+    font-weight: 600;
+    font-style: normal;
+    /* Браузер сначала попробует найти шрифт локально */
+
+    src: local('Cygre'), url('../fonts/CygreSemiBold.woff2') format('woff2'), url('../fonts/CygreSemiBold.woff') format('woff');
+}
 .btn
 {
     font-family: 'Inter', sans-serif;
@@ -663,7 +692,7 @@ html
 
 body
 {
-    font-family: var(--font-family), sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
@@ -687,6 +716,7 @@ body
     word-wrap: break-word;
 
     color: var(--color-text);
+    background-color: var(--bg-color);
     /*Перенос длинных слов*/
 
     overflow-wrap: break-word;
