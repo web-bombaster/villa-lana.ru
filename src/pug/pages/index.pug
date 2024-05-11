@@ -3,12 +3,28 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'home';
-
+- var pageType = 'index';
 
 //- home - главная страница
 if pageType === 'home'
 	include home
+
+//- our-rooms - номера
+if pageType === 'our-rooms'
+	include our-rooms
+
+//- room-detail - детальная страница номера
+if pageType === 'room-detail'
+	include room-detail
+
+//- blog - страница блога
+if pageType === 'blog'
+	include blog
+
+//- blog-post - Страница отдельного поста блога
+if pageType === 'blog-post'
+	include blog-post
+
 
 //- index - для показа верстки
 if pageType === 'index'

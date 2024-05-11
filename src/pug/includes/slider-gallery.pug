@@ -1,0 +1,17 @@
+mixin sliderGalleryItem(img)
+	.slider-gallery__item.swiper-slide
+		.slider-gallery__img
+			img(src="img/slider-gallery/"+img, alt="").slider-gallery__img
+
+
+.slider-gallery.section
+	.slider-gallery__slider.swiper
+		.slider-gallery__wrapper.swiper-wrapper
+			+sliderGalleryItem('01.jpg')
+			+sliderGalleryItem('02.jpg')
+			+sliderGalleryItem('03.jpg')
+			+sliderGalleryItem('04.jpg')
+			+sliderGalleryItem('05.jpg')
+		.slider-arrows.slider-gallery__arrows
+			.slider-arrows__prew.slider-gallery__prew
+			.slider-arrows__next.slider-gallery__next

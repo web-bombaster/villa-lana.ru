@@ -1,0 +1,42 @@
+.slider-arrows {
+	display: inline-flex;
+	align-items: center;
+	gap: 24px;
+
+	@media screen and (max-width: 1400px) {
+		gap: 16px;
+	}
+
+	& > * {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 1px solid #ae946d;
+		cursor: pointer;
+
+		background-image: url("../img/icons/arrow-slider.svg");
+		background-position: center;
+		background-size: 46px 46px;
+		background-repeat: no-repeat;
+
+		transition: all 0.25s;
+
+		@media screen and (max-width: 1400px) {
+			width: 70px;
+			height: 70px;
+		}
+
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
+}
+.slider-arrows__prew {
+}
+.slider-arrows__next {
+	transform: rotate(180deg);
+
+	&:hover {
+		transform: translateY(-2px) rotate(180deg);
+	}
+}

@@ -1,0 +1,38 @@
+mixin roomsListItem(img, title, descr)
+	.rooms-list__item.rl-item
+		a(href="#").rl-item__img
+			img(src="img/rooms-list/"+img, alt="")
+		.rl-item__info
+			.rl-item__box
+				a(href="#").rl-item__title.section-title #{title}
+				.rl-item__descr
+					p #{descr}
+				.rl-item__btns
+					a(href="#").rl-item__booking.btn.btn--transparent Забронировать
+					a(href="#").rl-item__readmore Подробнее
+
+
+
+
+.section
+	.rooms-list
+		+roomsListItem (
+			'01.jpg',
+			'Стандарт',
+			'Номера на первом или втором этаже гостиницы с курортными пейзажами и просторными спальными местами.',
+		)
+		+roomsListItem (
+			'02.jpg',
+			'Полулюкс',
+			'Все удобства будут у вас под рукой. Приятным дополнением станет собственная терраса с мебелью.',
+		)
+		+roomsListItem (
+			'03.jpg',
+			'Люкс и Делюкс',
+			'В просторных номерах есть мягкая двухспальная кровать и два балкона с прекрасным видом.',
+		)
+		+roomsListItem (
+			'04.jpg',
+			'Однокомнатные и двухкомнатные апартаменты',
+			'Подойдут для любителей долгого отдыха и домашней еды. В вашем распоряжении будет полноценная кухня и просторная терраса.',
+		)

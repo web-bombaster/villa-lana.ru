@@ -1,0 +1,254 @@
+.room-detail {
+	.slider-gallery {
+		background: linear-gradient(
+			0deg,
+			var(--bg-color) 50%,
+			var(--bg-color2) 50%
+		);
+
+		@media screen and (max-width: 768px) {
+            background: initial;
+            background-color: var(--bg-color2);
+        }
+	}
+}
+
+.room-detail__info {
+}
+.rd-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+
+	@media screen and (max-width: 992px) {
+		.btn {
+			padding: 14px 30px;
+			flex-grow: 1;
+		}
+	}
+}
+.rd-info__item {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	color: var(--color-accent);
+
+	border: 1px solid var(--color-accent);
+	padding: 20px 31px;
+
+	@media screen and (max-width: 992px) {
+		padding: 12px 30px;
+		font-size: 16px;
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 12px 10px;
+	}
+}
+
+.room-detail__about {
+}
+.rd-about {
+	display: flex;
+	// align-items: center;
+	align-items: flex-start;
+
+	background: linear-gradient(
+		180deg,
+		var(--bg-color) 240px,
+		var(--bg-color2) 240px
+	);
+
+	@media screen and (max-width: 1400px) {
+		background: linear-gradient(
+			180deg,
+			var(--bg-color) 200px,
+			var(--bg-color2) 200px
+		);
+	}
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 32px;
+
+		// background: initial;
+		// background-color: var(--bg-color2);
+	}
+
+
+}
+.rd-about__img {
+	width: 50%;
+	flex-shrink: 0;
+
+	border-radius: 0 var(--brs) var(--brs) 0;
+	overflow: hidden;
+
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-left: 16%;
+		// margin-left: 16%;
+		width: 100%;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+
+		transition: all 0.25s;
+
+		border-radius: 0 var(--brs) var(--brs) 0;
+
+		@media screen and (max-width: 768px) {
+			border-radius: var(--brs) 0 0 var(--brs);
+		}
+	}
+}
+.rd-about__info {
+	padding-left: 148px;
+	padding-right: var(--containerIndent);
+
+	width: 50%;
+	flex-shrink: 0;
+
+	@media screen and (max-width: 1630px) {
+		padding-right: 15px;
+	}
+
+	@media screen and (max-width: 1400px) {
+		padding-left: 80px;
+	}
+
+	@media screen and (max-width: 992px) {
+		padding-left: 40px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-left: 15px;
+		width: 100%;
+	}
+}
+.rd-about__box {
+	@media screen and (max-width: 768px) {
+		max-width: 600px;
+	}
+}
+.rd-about__title {
+	margin-bottom: 120px;
+
+	@media screen and (max-width: 1400px) {
+		margin-bottom: 80px;
+	}
+
+	@media screen and (max-width: 992px) {
+		margin-bottom: 20px;
+	}
+}
+.rd-about__descr {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	color: #fff;
+
+	@media screen and (max-width: 1400px) {
+		font-size: 20px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 16px;
+	}
+
+	& > * {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.room-detail__descr {
+	background-color: var(--bg-color2);
+}
+
+.room-detail__cols {
+}
+.rd-cols {
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+.rd-cols__col {
+	width: calc(100% / 3 - 32px * 2 / 3);
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+}
+.rd-cols__title {
+	margin: 0 0 40px;
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 100%;
+	letter-spacing: -0.01em;
+	color: var(--color-accent);
+
+	@media screen and (max-width: 1400px) {
+		margin: 0 0 28px;
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 992px) {
+		margin: 0 0 16px;
+		font-size: 24px;
+	}
+}
+.rd-cols__list {
+	list-style-type: disc;
+	padding-left: 20px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	@media screen and (max-width: 768px) {
+		gap: 4px;
+	}
+
+	li {
+		&::marker {
+			color: #ae946d;
+		}
+	}
+}
+
+.other-rooms {
+	@media screen and (max-width: 768px) {
+		background-color: var(--bg-color2);
+	}
+}
+
+.other-rooms__bottom {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+}

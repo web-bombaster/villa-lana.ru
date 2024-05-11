@@ -1,0 +1,94 @@
+mixin roomsSlide(img, price, title)
+	a(href="").rooms-slider__item.rooms-slide.swiper-slide
+		.rooms-slide__img
+			img(src="img/our-rooms/"+img, alt="")
+		.rooms-slide__box
+			span.rooms-slide__price #{price}
+			p.rooms-slide__title #{title}
+
+include ../includes/breadcrumbs
+
+.container
+	h1.page-title «Стандарт»
+	.room-detail__info.rd-info
+		span.rd-info__item от 3 000 ₽
+		span.rd-info__item 15-17 м2
+		span.rd-info__item 2 гостя
+		a(href="#").btn Забронировать
+
+section.section.room-detail__about.rd-about
+	.rd-about__img
+		img(src="img/room-detail/01.jpg", alt="")
+	.rd-about__info
+		.rd-about__box
+			h2.rd-about__title.section-title О номере
+			.rd-about__descr
+				p Элегантный интерьер и удобства высшего класса создают неповторимую атмосферу и все условия для полного комфорта в номерах «Стандарт». В номере располагается роскошная двуспальная кровать, рабочая зона, и ванная комната, оборудованная всем необходимым.
+				p Номер предусмотрен для проживания 2 взрослых и 1 ребенка до 12 лет включительно на дополнительном месте (кресло - кровать).
+
+.section.room-detail__descr
+	.container
+		.room-detail__cols.rd-cols
+			.rd-cols__col
+				h3.rd-cols__title Оснащение номера
+				ul.rd-cols__list
+					li сушилки для одежды;
+					li тапочки;
+					li пляжные полотенца;
+					li телевизор;
+					li сейф (бесплатно);
+					li холодильник (платно);
+					li Wi-Fi (бесплатно);
+					li москитные сетки;
+					li чайная станция.
+			.rd-cols__col
+				h3.rd-cols__title Оснащение ванной
+				ul.rd-cols__list
+					li душевая кабина;
+					li полотенца;
+					li фен;
+					li гель для душа и шампунь;
+					li шапочка для душа;
+					li полотенцесушитель.
+			.rd-cols__col
+				h3.rd-cols__title Прочее
+				ul.rd-cols__list
+					li бутилированная питьевая вода
+
+include ../includes/slider-gallery
+
+section.section.other-rooms
+	.container
+		.other-rooms__top.section-top
+			h2.section-title.section-top__title Другие номера
+			.slider-arrows.section-top__arrows
+				.slider-arrows__prew.other-rooms__prew
+				.slider-arrows__next.other-rooms__next
+			a(href="#").other-rooms__all.section-top__all Смотреть все
+		.other-rooms__swiper.swiper
+			.other-rooms__wrapper.swiper-wrapper
+				+roomsSlide(
+					'01.jpg',
+					'от 3 000 ₽',
+					'Стандарт'
+				)
+				+roomsSlide(
+					'02.jpg',
+					'от 4 000 ₽',
+					'Полулюкс'
+				)
+				+roomsSlide(
+					'03.jpg',
+					'от 5 000 ₽',
+					'Двухкомнатный люкс'
+				)
+				+roomsSlide(
+					'04.jpg',
+					'от 5 000 ₽',
+					'Делюкс'
+				)
+		.other-rooms__bottom
+
+
+
+include ../includes/advantages

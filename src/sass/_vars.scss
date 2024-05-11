@@ -9,36 +9,43 @@ $break_sm: 768px;
 $break_xs: 480px;
 $break_xxs: 330px;
 
-
 :root {
+	// Цвета
+	--color-text: #fff;
+	--color-accent: #ae946d;
+	--color-accent-hover: #d1b790;
 
-    // Цвета
-    --color-text: #fff; // цвет текста
-    --color-main: #0265C2; // основной цвет
-    --color-accent: #EE354B; // акцентный цвет
-    --color-border: #eee; // основной цвет
+	--bg-color: #212123;
+	--bg-color2: #181819;
 
-    --bg-color: #212123; // основной цвет
+	// Шрифты
+	--font-family: "Onest", sans-serif;
+	--second-family: "Vollkorn", serif;
 
+	// Скругления
+	--brs: 4px;
+	@media screen and (max-width: 480px) {
+		--brs: 2px;
+	}
 
-    // Шрифты
-    --font-family: "Cygre", sans-serif;
-    --font-family-accent: "Vollkorn", serif;
+	// Размеры
 
-    // Скругления
-    --brs6: .6rem;
+	--containerWidth: 1630px; // ширина контейнера
+	--containerWidthHalf: calc(
+		var(--containerWidth) / 2
+	); // ширина половины контейнера
 
-    // Размеры
-    --mainGap: 20px;
-    @media (max-width: $break_lg) {
-        --mainGap: 10px;
-    }
+	// --containerIndent: (calc(100% - var(--containerWidth)) / 2);
+	--containerIndent: calc((100vw - var(--containerWidth) + 60px) / 2);
+	@media screen and (max-width: 1630px) {
+		--containerIndent: 0;
+	}
 
-    --indentBlocks: 4.8rem;
-    @media (max-width: $break_lg) {
-        --indentBlocks: 4rem;
-    }
-
-    --heroMinCol: calc(100% / 5 - 3 / 4 * var(--mainGap));
-    --heroMaxCol: calc((100% - var(--heroMinCol) - 3 / 4 * var(--mainGap)) / 3);
+	--indentBlocks: 120px;
+	@media screen and (max-width: 992px) {
+		--indentBlocks: 80px;
+	}
+	@media screen and (max-width: 768px) {
+		--indentBlocks: 40px;
+	}
 }

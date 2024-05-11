@@ -16,13 +16,33 @@
 // @import '_breadcrumbs'; // Постраничная навигация
 @import '_button'; // Кнопки
 
+// Библиотеки и их кастомизация
+// @import "../libs/swiper-bundle.min";
+
 // Свои общие стили
 @import "_main";
 @import "_burger";
+@import "_first-screen";
+@import "_header";
+@import "_breadcrumbs";
+@import "_mobile-menu";
+@import "_about";
+@import "_slider-arrows";
+@import "_special-offers";
+@import "_our-rooms";
+@import "_slider-gallery";
+@import "_advantages";
+@import "_about-info";
+@import "_articles-slider";
+@import "_reviews-slider";
+@import "_section";
+@import "_content-home";
+@import "_rooms-list";
+@import "_room-detail";
+@import "_blog";
+@import "_blog-article";
+@import "_footer";
 
 
 // Стили текущего проекта
 
-
-// Библиотеки и их кастомизация
-// @import "../libs/swiper-bundle.min";

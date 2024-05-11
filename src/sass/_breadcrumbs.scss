@@ -1,26 +1,46 @@
-.breadcrumbs {
-	margin-top: 41px;
-	font-size: 14px;
-	color: #858585;
+.breadcrumbs-box {
+	margin-bottom: 16px;
+	padding-top: 120px;
 
-	@media screen and (max-width: $break_md) {
-		font-size: 13px;
+	text-align: center;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.01em;
+	color: #fff;
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 80px;
+		font-size: 14px;
 	}
 
-	@media screen and (max-width: $break_sm) {
-		margin-top: 20px;
+	@media screen and (max-width: 992px) {
+		margin-bottom: 12px;
+		padding-top: 32px;
+		font-size: 12px;
 	}
 
-	a, a span {
-		color: #858585;
+	a {
+		color: #909091;
 		text-decoration: none;
-	}
 
-	a:not([class]) {
-		text-decoration: none;
+		transition: all .25s;
+
+		&:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
 	}
 
 	span {
-		color: #2c2c2c;
+		color: #909091;
 	}
+}
+.container {
+}
+.breadcrumbs {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
 }

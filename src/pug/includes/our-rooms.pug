@@ -1,0 +1,48 @@
+mixin roomsSlide(img, price, title)
+	a(href="").rooms-slider__item.rooms-slide.swiper-slide
+		.rooms-slide__img
+			img(src="img/our-rooms/"+img, alt="")
+		.rooms-slide__box
+			span.rooms-slide__price #{price}
+			p.rooms-slide__title #{title}
+
+
+section.our-rooms.section
+	//- .our-rooms__container.container
+
+
+
+	.our-rooms__row
+		.our-rooms__col.our-rooms__col--text
+			.our-rooms__box
+				.our-rooms__text
+					h2.our-rooms__title.section-title Наши номера
+					p.our-rooms__descr Предоставляем номера, где хотели бы жить сами. Для самых различныхцелей и компаний.
+				.our-rooms__controls
+					.slider-arrows
+						.slider-arrows__prew.our-rooms__prew
+						.slider-arrows__next.our-rooms__next
+					a(href="").our-rooms__all Смотреть все номера
+		.our-rooms__col.our-rooms__col--slider
+			.our-rooms__slider.rooms-slider.swiper
+				.rooms-slider__wrapper.swiper-wrapper
+					+roomsSlide(
+						'01.jpg',
+						'от 3 000 ₽',
+						'Стандарт'
+					)
+					+roomsSlide(
+						'02.jpg',
+						'от 4 000 ₽',
+						'Полулюкс'
+					)
+					+roomsSlide(
+						'03.jpg',
+						'от 5 000 ₽',
+						'Двухкомнатный люкс'
+					)
+					+roomsSlide(
+						'04.jpg',
+						'от 5 000 ₽',
+						'Делюкс'
+					)

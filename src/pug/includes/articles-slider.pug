@@ -1,0 +1,34 @@
+mixin articlesSliderItem(img, title)
+	a(href="#").articles-slider__item.as-item.swiper-slide
+		.as-item__img
+			img(src="img/articles-slider/"+img, alt="")
+		p.as-item__title #{title}
+
+
+section.section.articles-slider
+	.container
+		.articles-slider__top.section-top
+			h2.section-title.section-top__title Статьи
+			.slider-arrows.section-top__arrows
+				.slider-arrows__prew.articles-slider__prew
+				.slider-arrows__next.articles-slider__next
+			a(href="#").section-top__all.articles-slider__all Смотреть все
+
+		.articles-slider__swiper.swiper
+			.articles-slider__wrapper.swiper-wrapper
+				+articlesSliderItem(
+					'01.jpg',
+					'Куршская коса — природная достопримечательность'
+				)
+				+articlesSliderItem(
+					'02.jpg',
+					'Куршская коса — природная достопримечательность'
+				)
+				+articlesSliderItem(
+					'03.jpg',
+					'Куршская коса — природная достопримечательность'
+				)
+				+articlesSliderItem(
+					'04.jpg',
+					'Куршская коса — природная достопримечательность'
+				)

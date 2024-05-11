@@ -1,0 +1,36 @@
+mixin blogPostsItem(img, title)
+	a(href="#").blog-posts__item
+		.blog-posts__img
+			img(src="img/blog/"+img, alt="")
+		span.blog-posts__title #{title}
+
+include ../includes/breadcrumbs
+
+section.section.blog__section
+	.container
+		h1.page-title Блог
+
+		.blog-posts
+			+blogPostsItem(
+				'01.jpg',
+				'Куда сходить и что посмотреть в Калининграде'
+			)
+			+blogPostsItem(
+				'02.jpg',
+				'Куршская коса — природная достопримечательность'
+			)
+			+blogPostsItem(
+				'03.jpg',
+				'Калининград = исторические достопримечательности'
+			)
+			+blogPostsItem(
+				'04.jpg',
+				'Автохтонные сорта Калининградских виноделен'
+			)
+			+blogPostsItem(
+				'05.jpg',
+				'Наш топ заведений Зеленоградского променада'
+			)
+
+
+

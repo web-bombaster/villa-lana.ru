@@ -1,0 +1,28 @@
+mixin advantagesItem(img, title, descr)
+	a(href="#").about-info__item.ai-item
+		.ai-item__img
+			img(src="img/about-info/"+img, alt="")
+		.ai-item__box
+			span.ai-item__title #{title}
+			.ai-item__descr
+				p #{descr}
+
+section.section.about-info
+	.about-info__container.container
+		.about-info__list
+			+advantagesItem(
+				'01.jpg',
+				'Море',
+				'Идеально подходит для того, чтобы дышать морскимвоздухом, собирать песок в ботинки и отдыхать душой.'
+			)
+			+advantagesItem(
+				'02.jpg',
+				'Комфорт',
+				'Удобные номера, мангал, сауна, зеленая зона для детей и занятий йогой. Приезжайте с возлюбленными, детьми, друзьями или одни.'
+			)
+			+advantagesItem(
+				'03.jpg',
+				'Места',
+				'Зеленоградску больше 750 лет. В нем сохранилась немецкая архитектура и появилась современная инфраструктура.'
+			)
+

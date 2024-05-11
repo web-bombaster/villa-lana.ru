@@ -1,0 +1,43 @@
+mixin offersSlid(img, date, title)
+	a(href="#").offers-slider__item.offers-slid.swiper-slide
+		.offers-slid__img
+			img(src="img/offers-slider/"+img, alt="")
+		span.offers-slid__date #{date}
+		p.offers-slid__title #{title}
+
+
+section.section.special-offers
+	.container
+		.special-offers__top.section-top
+			h2.section-title.section-top__title Акции
+			.slider-arrows.section-top__arrows
+				.slider-arrows__prew.special-offers__prew
+				.slider-arrows__next.special-offers__next
+			a(href="#").special-offers__all.section-top__all Смотреть все
+		.offers-slider.swiper
+			.offers-slider__wrapper.swiper-wrapper
+				+offersSlid(
+					'01.jpg',
+					'01.03.2024 — 01.06.2024',
+					'Отдых в мае со скидкой 30%'
+				)
+				+offersSlid(
+					'01.jpg',
+					'01.03.2024 — 01.06.2024',
+					'Отдых в мае со скидкой 30%'
+				)
+				+offersSlid(
+					'01.jpg',
+					'01.03.2024 — 01.06.2024',
+					'Отдых в мае со скидкой 30%'
+				)
+				+offersSlid(
+					'01.jpg',
+					'01.03.2024 — 01.06.2024',
+					'Отдых в мае со скидкой 30%'
+				)
+				+offersSlid(
+					'01.jpg',
+					'01.03.2024 — 01.06.2024',
+					'Отдых в мае со скидкой 30%'
+				)

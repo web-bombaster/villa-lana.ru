@@ -1,0 +1,139 @@
+.advantages {
+	background-color: var(--bg-color2);
+}
+.advantages-title {
+}
+.advantages-box {
+	display: flex;
+	gap: 24px;
+}
+.advantages-img {
+	width: 40%;
+	flex-shrink: 0;
+	border-radius: var(--brs);
+	overflow: hidden;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+
+	&:hover {
+		.advantages-img__box {
+			transform: scale(1.05);
+		}
+	}
+}
+.advantages-img__box {
+	padding-top: 100%;
+
+	background-color: var(--bg-color);
+	border-radius: var(--brs);
+
+	background-size: cover;
+	background-position: center;
+
+	transition: all .25s;
+}
+.advantages-list {
+	flex-grow: 1;
+}
+.advantages-list__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	@media screen and (max-width: 992px) {
+		flex-direction: row;
+		gap: 0;
+	}
+}
+.advantages-list__item {
+	@media screen and (max-width: 992px) {
+		// width: 265px;
+	}
+}
+.advantages-item {
+	padding: 24px;
+
+	background-color: var(--bg-color);
+	border-radius: var(--brs);
+
+	opacity: 0.5;
+	transition: all 0.25s;
+	overflow: hidden;
+
+	cursor: pointer;
+
+	@media screen and (max-width: 992px) {
+		padding: 0;
+		opacity: 1;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+.advantages-item__box {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+
+	@media screen and (max-width: 992px) {
+		padding: 16px;
+		gap: 16px;
+	}
+}
+.advantages-item__img {
+	display: none;
+
+	@media screen and (max-width: 992px) {
+		display: block;
+
+		img {
+			height: 180px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.advantages-item__title {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 100%;
+	letter-spacing: -0.01em;
+	color: #fff;
+
+	@media screen and (max-width: 1400px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 18px;
+	}
+}
+.advantages-item__descr {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	color: #fff;
+
+	& > * {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@media screen and (max-width: 1400px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 12px;
+	}
+}

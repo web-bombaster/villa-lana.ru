@@ -5,9 +5,13 @@ mixin linkToPage(link, title)
 doctype html
 html(lang="ru-RU")
 	include ../includes/head
-	body
+	body.verstka
 		.container
 			h1 Верстка сайта villa-lana.ru:
 			.index
 				p.info Если страничка отображается криво, обновляем ее через CTRL + F5!
 				+linkToPage('home','home - Главная')
+				+linkToPage('our-rooms','our-rooms - Номера')
+				+linkToPage('room-detail','room-detail - Детальная страница номера')
+				+linkToPage('blog','blog - Страница блога')
+				+linkToPage('blog-post','blog-post - Страница отдельного поста блога')
