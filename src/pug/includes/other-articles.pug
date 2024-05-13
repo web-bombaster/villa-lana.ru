@@ -1,0 +1,24 @@
+mixin otherArticlesList(img, title)
+	.oa-list__item
+		a(href="#").oa-list__link
+			.oa-list__img
+				img(src="img/articles-slider/"+img, alt="")
+			p.oa-list__title #{title}
+
+section.other-articles.section
+	.other-articles__container.container
+		h2.other-articles__title.section-title Другие статьи
+
+		ul.other-articles__list.oa-list
+			+otherArticlesList (
+				'01.jpg',
+				'Куршская коса — природная достопримечательность',
+			)
+			+otherArticlesList (
+				'02.jpg',
+				'Куршская коса — природная достопримечательность',
+			)
+			+otherArticlesList (
+				'03.jpg',
+				'Куршская коса — природная достопримечательность',
+			)

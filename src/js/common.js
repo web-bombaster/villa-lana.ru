@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './myscripts/advantages.js'
 	// include './myscripts/reviews-more.js'
 	// include './myscripts/headerFixed.js'
+	// include './myscripts/hot-info-close.js'
 });
 
 
